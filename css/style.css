@@ -48,7 +48,7 @@ header .top span {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 12px;
 }
 header .top .menu li {
   display: inline-block;
@@ -59,7 +59,7 @@ header .top .menu li a {
   text-transform: uppercase;
   font-family: "Bebas Neue", cursive;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 16px;
   letter-spacing: 1px;
   margin-left: 60px;
   width: 30px;
@@ -82,20 +82,22 @@ header .cell {
 }
 header .bottom p {
   font-family: "Bebas Neue", cursive;
-  font-size: 24px;
+  font-size: 17px;
   border: 2px dashed var(--bistre);
   display: inline-block;
   padding: 6px 8px;
 }
 header .bottom h1 {
   font-family: "Alfa Slab One", cursive;
-  font-size: 114px;
+  font-size: 86px;
   letter-spacing: 5px;
+  text-shadow: 5px 5px #fee6b5;
 }
 header .bottom h3 {
   font-family: "Alfa Slab One", cursive;
-  font-size: 56px;
+  font-size: 48px;
   letter-spacing: 3px;
+  text-shadow: 5px 5px #fee6b5;
 }
 /* header section css ends here */
 /* popualr section starts here */
@@ -119,30 +121,29 @@ header .bottom h3 {
 }
 .popular .img-desc {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 30px;
+  left: 30px;
 }
 .popular .hs {
   position: relative;
   margin-bottom: 30px;
 }
 .popular .img-desc h3 {
-  font-size: 25px;
+  font-size: 18px;
 }
 .popular .img-desc h1 {
-  font-size: 42px;
+  font-size: 30px;
 }
 /* popualr section starts here */
 /* single button section starts here */
 .pop-btn {
   text-transform: uppercase;
-  margin: 40px auto;
+  margin: 50px auto;
   text-align: center;
 }
 .pop-btn a {
   padding: 13px 24px;
   color: var(--bistre);
-  margin: 40px auto;
   text-decoration: none;
   background-color: #f7ad1b;
   font-family: "Bebas Neue", cursive;
@@ -153,7 +154,7 @@ header .bottom h3 {
   transition: 0.2s;
 }
 .pop-btn a:hover {
-  box-shadow: 4px 4px 10px black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 /* single button section ends here */
 /* order section starts here */
@@ -181,6 +182,7 @@ header .bottom h3 {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  margin-bottom: 150px;
 }
 .order .parts {
   width: 30%;
@@ -200,7 +202,7 @@ header .bottom h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: normal;
-  margin-bottom: 15px;
+  margin-bottom: 60px;
 }
 .order .parts button {
   cursor: pointer;
@@ -212,7 +214,10 @@ header .bottom h3 {
   font-size: 18px;
   padding: 16px 30px;
   border: none;
-  margin: 40px;
+  transition: 100ms;
+}
+.order .parts button:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 /* bottom */
 /* order section ends here */
@@ -221,8 +226,8 @@ header .bottom h3 {
   padding: 30px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 60px 60px 58px -20px rgba(0, 0, 0, 0.3);
-  margin-bottom: 120px;
+  box-shadow: 20px 40px 60px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
 }
 .slider .left {
   width: 50%;
@@ -267,8 +272,6 @@ font-family: "Montserrat", sans-serif; */
   text-align: center;
   display: flex;
   align-items: center;
-  color: black;
-  box-shadow: 0px -40px 40px 10px rgba(0, 0, 0, 0.1);
 }
 .form h3 {
   color: var(--bistre);
@@ -295,20 +298,18 @@ font-family: "Montserrat", sans-serif; */
   font-size: 21px;
   margin-bottom: 30px;
   border: none;
-  border: 2px solid black;
+  border: 1px solid #bebebe;
   border-radius: 5px;
+  color: #3d3d3d;
 }
 .form .left {
   margin-right: 15px;
 }
-.form .left::placeholder {
-  color: black;
+.form form input::placeholder {
+  color: #3d3d3d;
 }
 .form .right {
   margin-left: 15px;
-}
-.form .right::placeholder {
-  color: black;
 }
 .form .btn {
   width: 30%;
@@ -317,6 +318,7 @@ font-family: "Montserrat", sans-serif; */
   background-color: #bf2222;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  color: white;
 }
 .form .btn:hover {
   font-weight: bold;
