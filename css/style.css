@@ -1,0 +1,397 @@
+/* font familys
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
+*/
+/* global section css starts here */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bistre: #3d2514;
+}
+body {
+  padding-bottom: 60px !important;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: auto;
+}
+/* global section css ends here */
+/* header section css starts here */
+header {
+  background-image: url(../img/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 80px;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+header .top .right .hotline {
+  margin-bottom: 20px;
+}
+header .top .right {
+  text-align: right;
+}
+header .top .hotline img {
+  vertical-align: middle;
+}
+header .top span {
+  vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+header .top .menu li {
+  display: inline-block;
+}
+header .top .menu li a {
+  text-decoration: none;
+  color: var(--bistre);
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 1px;
+  margin-left: 60px;
+  width: 30px;
+}
+header .top .menu li a:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+header .bottom {
+  text-transform: uppercase;
+  color: var(--bistre);
+  font-weight: normal;
+  height: 60vh;
+  display: table;
+}
+header .cell {
+  display: table-cell;
+  vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
+}
+header .bottom p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+  border: 2px dashed var(--bistre);
+  display: inline-block;
+  padding: 6px 8px;
+}
+header .bottom h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 114px;
+  letter-spacing: 5px;
+}
+header .bottom h3 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 56px;
+  letter-spacing: 3px;
+}
+/* header section css ends here */
+/* popualr section starts here */
+.popular .container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.popular img {
+  width: 100%;
+}
+.popular .left {
+  margin-right: 20px;
+  position: relative;
+}
+.popular .right {
+  margin-left: 20px;
+}
+.popular .img-desc {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.popular .hs {
+  position: relative;
+  margin-bottom: 30px;
+}
+.popular .img-desc h3 {
+  font-size: 25px;
+}
+.popular .img-desc h1 {
+  font-size: 42px;
+}
+/* popualr section starts here */
+/* single button section starts here */
+.pop-btn {
+  text-transform: uppercase;
+  margin: 40px auto;
+  text-align: center;
+}
+.pop-btn a {
+  padding: 13px 24px;
+  color: var(--bistre);
+  margin: 40px auto;
+  text-decoration: none;
+  background-color: #f7ad1b;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: 0.2s;
+}
+.pop-btn a:hover {
+  box-shadow: 4px 4px 10px black;
+}
+/* single button section ends here */
+/* order section starts here */
+/* top  */
+.order .top {
+  text-align: center;
+}
+.order .top h1 {
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+  color: var(--bistre);
+  letter-spacing: 2px;
+}
+.order .top p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--bistre);
+  margin: 20px auto;
+}
+/* top */
+/* bottom */
+.order .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.order .parts {
+  width: 30%;
+  text-align: center;
+}
+.order .parts img {
+  height: 250px;
+}
+.order .parts h2 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 38px;
+  margin: 20px auto;
+}
+.order .parts p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.order .parts button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 400;
+  background-color: #bf2222;
+  color: white;
+  font-size: 18px;
+  padding: 16px 30px;
+  border: none;
+  margin: 40px;
+}
+/* bottom */
+/* order section ends here */
+/* slider section starts here */
+.slider {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 60px 60px 58px -20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 120px;
+}
+.slider .left {
+  width: 50%;
+  margin-right: 15px;
+  padding: 10px;
+}
+/* font-family: "Alfa Slab One", cursive;
+font-family: "Bebas Neue", cursive;
+font-family: "Montserrat", sans-serif; */
+.slider .left h4 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--bistre);
+}
+.slider .left h1 {
+  color: var(--bistre);
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: normal;
+  font-family: "Alfa Slab One", cursive;
+}
+.slider .left p {
+  font-size: 21px;
+  color: #555;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+.slider .right {
+  width: 50%;
+  margin-left: 15px;
+}
+/* slider section ends here */
+/* form section starts here */
+.form {
+  height: 700px;
+  background-image: url(../img/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: black;
+  box-shadow: 0px -40px 40px 10px rgba(0, 0, 0, 0.1);
+}
+.form h3 {
+  color: var(--bistre);
+  margin-bottom: 20px;
+  font-size: 29px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+}
+.form h1 {
+  color: var(--bistre);
+  margin-bottom: 80px;
+  font-size: 50px;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: normal;
+}
+.form input:focus {
+  outline: none;
+}
+.form input {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  width: 25%;
+  padding: 25px;
+  font-size: 21px;
+  margin-bottom: 30px;
+  border: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.form .left {
+  margin-right: 15px;
+}
+.form .left::placeholder {
+  color: black;
+}
+.form .right {
+  margin-left: 15px;
+}
+.form .right::placeholder {
+  color: black;
+}
+.form .btn {
+  width: 30%;
+  margin-left: 15px;
+  border: none;
+  background-color: #bf2222;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.form .btn:hover {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* form section ends here */
+/* footer section starts here */
+footer {
+  background-image: url(../img/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  color: white;
+}
+footer .middle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+footer .middle p {
+  width: 40%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+footer .middle .middle-right {
+  width: 35%;
+  height: 100%;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 21px;
+  margin: auto 0;
+}
+footer .middle .middle-right i {
+  margin-right: 20px;
+  text-align: center;
+  width: 20px;
+}
+footer .middle .middle-right h4 {
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+footer .bottom {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+footer .bottom ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+footer .bottom ul li a {
+  text-decoration: none;
+}
+footer .bottom a i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  margin-left: 5px;
+  transition: 0.5s ease-in-out;
+}
+footer .bottom a i:hover {
+  color: var(--bistre);
+  background-color: #ffc353;
+  transform: scale(1.3);
+}
+/* footer section ends here */
