@@ -216,6 +216,9 @@ header .bottom h3 {
   border: none;
   transition: 100ms;
 }
+.order .parts button:focus {
+  outline: none;
+}
 .order .parts button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
