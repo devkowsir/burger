@@ -310,7 +310,10 @@ header .bottom .bnr img {
 /* form section ends here  */
 /* footer section starts here  */
 footer {
-  background: url(../img/footer-bg.png) center no-repeat;
+  background-image: url(../img/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 40px;
 }
