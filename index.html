@@ -1,183 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>BURGER HOUSE | HOME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- owl-carousel -->
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Burger</title>
 </head>
 <body>
-    <!-- heder section starts here -->
-   <header>
-       <div class="container">
-           <div class="top">
-               <div class="logo">
-                   <img src="./img/logo.png" alt="LOGO">
-               </div>
-               <div class="nav">
-                   <div class="dlvr">
-                        <img src="./img/bike.png" alt="">
-                        <span>Express Delivery +880 132 432 2312</span>
-                   </div>
-                   <div class="menu">
-                       <ul>
-                           <li><a href="">HOME</a></li>
-                           <li><a href="">MENU</a></li>
-                           <li><a href="">CONTACT US</a></li>
-                           <li><a href="">OUR STORY</a></li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-           <div class="bottom">
-               <div class="cntnt">
-                    <div>
-                        <p>IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS<br></p>
-                        <h1>BURGER<br></h1>
-                        <h3>WEEK</h3>
-                    </div>
-               </div>
-               <div class="bnr">
-                   <img src="./img/banner.png" alt="">
-               </div>
-           </div>
-       </div>
-   </header> 
-    <!-- heder section ends here -->
-    <!-- category section starts here -->
-    <div class="dish">
-        <div class="container">
-            <div class="left">
-                <div class="relative">
-                    <img src="./img/dish-1.png" alt="">
-                    <div class="absolute">
-                        <h3>TRY IT TODAY</h3>
-                        <h1>MOST POPULAR BURGER</h1>
-                    </div>
-                </div>
+  <header class="py">
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <a href="index.html" class="navbar-brand"><img src="./img/logo.png" alt="Burger House"></a>
+        <button class="navbar-toggler" data-bs-target="#nav"  data-bs-toggle="collapse">
+          <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <div class="ms-auto">
+            <div class="desktop">
+              <img src="./img/bike.png" alt="bike image">
+              <span>Express Delivery +1234 567 890</span>
             </div>
-            <div class="right">
-                <div class="relative">
-                    <img src="./img/dish-2.png" alt="">
-                    <div class="absolute">
-                        <h3>TRY IT TODAY</h3>
-                        <h1>MORE FUN<br>MORE TASTE</h1>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="./img/dish-3.png" alt="">
-                    <div class="absolute">
-                        <h3>TRY IT TODAY</h3>
-                        <h1>FRESH & CHILI</h1>
-                    </div>
-                </div>
-            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#">home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">our story</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">contact us</a></li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div class="row">
+        <div class="content col-md-7 col-lg-6 d-flex justify-content-center flex-column">
+          <h4>It is a good time for the great taste of burgers</h4>
+          <h1>burger</h1>
+          <h2>week</h2>
+        </div>
+        <div class="col-md-5 col-lg-6">
+          <img class="img-fluid" src="./img/burger.png" alt="burger with drink">
+        </div>
+      </div>
     </div>
-    <!-- category section ends here -->
-    <!-- single button section starts here  -->
-    <div class="button">
-        <button>ALWAYS TASTY BURGER</button>
+  </header>
+  <!-- dish section starts here -->
+  <section class="popular container py">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="dish">
+          <img class="img-fluid" src="./img/dish-1.png" alt="dish-1">
+          <div class="details">
+            <h4>try it today</h4>
+            <h2>Most popular burger</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex flex-column">
+        <div class="dish">
+          <img class="img-fluid" src="./img/dish-2.png" alt="dish-2">
+          <div class="details">
+            <h4>try it today</h4>
+            <h2>More fun<br>more taste</h2>
+          </div>
+        </div>
+        <div class="dish mt-auto">
+          <img class="img-fluid" src="./img/dish-3.png" alt="dish-3">
+          <div class="details">
+            <h4>try it today</h4>
+            <h2>fresh & chili</h2>
+          </div>
+        </div>
+      </div>
+      <button class="text-center">Always tasty burger</button>
     </div>
-    <!-- single button section ends here  -->
-    <!-- order section starts here -->
-    <div class="container order">
-        <div class="top">
-            <h1>CHOOSE & ENJOY</h1>
-            <p>Lorem ipsum dolor, sit adipisicing elit. Quo velit labore sunt, earum explicabo iusto voluptatem suscipit.<br> adipisci cupiditate, eius cumque aliquid! id harum  praesentium.</p>
-        </div>
-        <div class="bottom">
-            <div class="hs">
-                <div class="img">
-                    <img style="width: 115%;" src="./img/burger-1.png" alt="">
-                </div>
-                <h2>LOREM IPSUM DOLOR</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, eum.</p>
-                <button>ORDER NOW</button>
-            </div>
-            <div class="hs">
-                <div class="img">
-                    <img src="./img/burger-2.png" alt="">
-                </div>
-                <h2>LOREM IPSUM DOLOR</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, eum.</p>
-                <button>ORDER NOW</button>
-            </div>
-            <div class="hs">
-                <div class="img">
-                    <img  style="width: 115%;" src="./img/burger-3.png" alt="">
-                </div>
-                <h2>LOREM IPSUM DOLOR</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, eum.</p>
-                <button>ORDER NOW</button>
-            </div>
-        </div>
+  </section>
+  <!-- order section -->
+  <section class="order py container">
+    <h1>choose & enjoy</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iure molestias consequatur eveniet id amet rem veritatis vel nam odit.</p>
+    <div class="row align-items-end justify-content-between">
+      <div class="col-md-4">
+        <img class="img-fluid" src="./img/burger-1.png" alt="burger1">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, placeat.</p>
+        <button class="btn btn-lg">ORDER NOW</button>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" src="./img/burger-1.png" alt="burger2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, placeat.</p>
+        <button class="btn btn-lg">ORDER NOW</button>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" src="./img/burger-1.png" alt="burger3">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, placeat.</p>
+        <button class="btn btn-lg">ORDER NOW</button>
+      </div>
     </div>
-    <!-- order section ends here -->
-    <!-- slider section starts here -->
-    <div class="container slider">
-        <div class="left">
-            <h4>DISCOVER</h4>
-            <h2>UPCOMING EVENTS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ex ipsam alias non nam nulla voluptate! Quos, fugit. Labore sed accusamus reiciendis dolor voluptate velit?</p>
+  </section>
+  <!-- event section -->
+  <section class="slider container py">
+    <div>
+      <div class="owl-theme owl-carousel">
+        <div class="item row">
+          <div class="col-md-6">
+            <h5>DISCOVER</h5>
+            <h3>UPCOMING EVENTS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque laboriosam eum, officiis consequatur corrupti tempore eaque voluptatibus optio facilis ab. Veniam deserunt, voluptatum quasi optio at dolorum cumque illo sit qui inventore recusandae iusto. Aut molestias facere officiis deleniti consectetur officia quisquam soluta aliquam exercitationem quod suscipit, odit laboriosam.</p>
+          </div>
+          <div class="col-md-6"><img src="./img/slider.png" alt="Burger" class="img-fluid"></div>
         </div>
-        <div class="right">
-            <img style="width: 100%;" src="./img/slider.png" alt="">
+        <div class="item row">
+          <div class="col-md-6">
+            <h5>DISCOVER</h5>
+            <h3>UPCOMING EVENTS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque laboriosam eum, officiis consequatur corrupti tempore eaque voluptatibus optio facilis ab. Veniam deserunt, voluptatum quasi optio at dolorum cumque illo sit qui inventore recusandae iusto. Aut molestias facere officiis deleniti consectetur officia quisquam soluta aliquam exercitationem quod suscipit, odit laboriosam.</p>
+          </div>
+          <div class="col-md-6"><img src="./img/slider.png" alt="Burger" class="img-fluid"></div>
         </div>
+        <div class="item row">
+          <div class="col-md-6">
+            <h5>DISCOVER</h5>
+            <h3>UPCOMING EVENTS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque laboriosam eum, officiis consequatur corrupti tempore eaque voluptatibus optio facilis ab. Veniam deserunt, voluptatum quasi optio at dolorum cumque illo sit qui inventore recusandae iusto. Aut molestias facere officiis deleniti consectetur officia quisquam soluta aliquam exercitationem quod suscipit, odit laboriosam.</p>
+          </div>
+          <div class="col-md-6"><img src="./img/slider.png" alt="Burger" class="img-fluid"></div>
+        </div>
+      </div>
     </div>
-    <!-- slider section ends here -->
-    <!-- form section starts here -->
-    <div class="form">
-        <div class="container">
-            <div class="top">
-                <h2>RESERVATION</h2>
-                <h1>BOOK YOUR TABLE</h1>
-            </div>
-            <form action="">
-                <div>
-                    <input class="left" type="text" placeholder="name">
-                    <input class="right" type="email" placeholder="email">
-                </div>
-                <div>
-                    <input class="left" type="date" name="" id="">
-                    <input class="right" type="time" name="" id="">
-                </div>
-                <div>
-                    <input class="left" type="number" placeholder="people">
-                    <input class="btn" type="button" value="find a table">
-                </div>
-            </form>
+  </section>
+  <!-- Booking Seat -->
+  <div class="reservation">
+    <div class="container py text-center">
+      <h4>RESERVATION</h4>
+      <h1>BOOK YOUR TABLE</h1>
+      <form class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <input type="text" name="name" placeholder="Name">
+          <input type="date" name="date" placeholder="Date">
+          <input type="number" name="people" placeholder="People">
         </div>
+        <div class="col-md-4">
+          <input type="email" name="email" placeholder="Email">
+          <input type="time" name="time" placeholder="Time">
+          <input type="submit" name="submit" value="FIND A TABLE">
+        </div>
+      </form>
     </div>
-    <!-- form section ends here -->
-    <!-- footer section starts here -->
-    <footer class="container">
-        <img src="./img/logo-white.png" alt="">
-        <div class="middle">
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero vitae reprehenderit temporibus max, officia quis. Soluta laudantium libero exercitationem odit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis saepe laudantium ducimus quod tempore cupiditate enim dolor consequuntur corrupti magnam.</p>
-            </div>
-            <div>
-                <h4><i class="fas fa-map-marker-alt"></i>MAIN ROAD, BUILDING NAME, COUNTRY</h4>
-                <h4><i class="fas fa-envelope"></i>INFO@COMPANYNAME.COM</h4>
-            </div>
+  </div>
+  <!-- footer seciton -->
+  <footer class="py">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-5 col-xl-5">
+          <img class="img-fluid" src="./img/logo-white.png" alt="Burger logo">
+          <p>Lorem ipsum dolor. Odit eum ipsa praesentium quod quos nihil, commodi, doloremque aliquam facilis quis reiciendis rem voluptatibus ipsam? Quo, ea. Ab totam iste odio dolor!</p>
         </div>
-        <div class="end">
-            <p>&copy;COMPANY NAME 2020. ALL RIGHTS RESERVED.</p>
-            <div>
-                <ul>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
+        <div class="col-md-1 col-lg-2 col-xl-3"></div>
+        <div class="col-md-5 col-lg-5 col-xl-4">
+          <h4><i class="fas fa-map-marker-alt"></i>main road, building name, country</h4>
+          <h4><i class="fas fa-envelope"></i>info@companyname.com</h4>
         </div>
-    </footer>
-    <!-- footer section ends here -->
+      </div>
+      <div class="d-flex justify-content-between">
+        <p>&copy;company name 2020. all rights reseved.</p>
+        <ul>
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- bootstrap js -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- owl carousel -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/owl.carousel.js"></script>
+  <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+  </script>
 </body>
 </html>
