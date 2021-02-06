@@ -196,6 +196,10 @@ header .content h2 {
           box-shadow: calc( var(--spacer) * 1) calc( var(--spacer) * 1) calc( var(--spacer) * 2.5) rgba(0, 0, 0, 0.2);
 }
 
+.slider > div {
+  padding: calc( var(--spacer) * 2);
+}
+
 .slider h3 {
   font-family: 'Alfa Slab One';
   font-size: calc( var(--spacer) * 1.5);
